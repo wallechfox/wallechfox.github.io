@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>wallechfox的个人主页</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { 
+            font-family: 'Segoe UI', system-ui, sans-serif; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 20px; 
+            line-height: 1.6; 
+            color: #333; 
+            background-color: #f8f9fa;
+        }
+        .header { text-align: center; margin-bottom: 40px; }
+        .avatar { 
+            width: 120px; 
+            height: 120px; 
+            border-radius: 50%; 
+            object-fit: cover; 
+            border: 4px solid #2d3436; 
+            margin-bottom: 15px;
+        }
+        h1 { color: #2d3436; margin-bottom: 10px; }
+        .tagline { color: #636e72; font-size: 1.2em; margin-bottom: 20px; }
+        .intro { 
+            background: white; 
+            padding: 25px; 
+            border-radius: 12px; 
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+            margin-bottom: 40px;
+        }
+        .projects h2 { border-bottom: 3px solid #0984e3; padding-bottom: 10px; color: #2d3436; }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+        .project-title { 
+            color: #0984e3; 
+            margin-top: 0; 
+            display: flex; 
+            align-items: center; 
+            gap: 10px;
+        }
+        .project-title i { font-size: 1.4em; }
+        .project-desc { color: #555; }
+        .footer {
+            text-align: center;
+            margin-top: 50px;
+            color: #636e72;
+            font-size: 0.9em;
+            border-top: 1px solid #eee;
+            padding-top: 20px;
+        }
+        .social-links a {
+            color: #2d3436;
+            font-size: 1.5em;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+        .social-links a:hover { color: #0984e3; }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>wallechfox</h1>
+        <p class="tagline">一名热爱创造与分享的开发者</p>
+    </div>
+
+    <div class="intro">
+        <h2>👋 关于我</h2>
+        <p>你好！欢迎来到我的个人空间。我是一名对 Web 技术和开源软件充满热情的开发者。这里展示了我的一些项目作品，它们大多使用 HTML、CSS 和 JavaScript 构建，注重实用性与用户体验。</p>
+        <p>我相信工具应该为人服务，因此我乐于创造那些能解决实际问题的、简洁优雅的小工具。</p>
+    </div>
+
+    <div class="projects">
+        <h2>🚀 我的项目</h2>
+        
+        <div class="project-card" target="_blank">
+            <h3 class="project-title"><i class="fas fa-qrcode"></i> OfflineTxt2QR</h3>
+            <p class="project-desc">一个完全离线、完美支持中文的文本转二维码生成工具。无需网络，所有数据在本地浏览器中安全处理，支持长文本和多种容错级别。</p>
+			<p> 项目内部附有演示页面</p>
+			<a href="https://github.com/wallechfox/OfflineTxt2QR" class="demo-link" target="_blank">🌐 项目页面：https://wallechfox.github.io/OfflineTxt2QR/</a>
+        </div>
+
+		
+		
+		<div  class="project-card" target="_blank">
+            <h3 class="project-title"><i class="fas fa-qrcode"></i>QRBridge </h3>
+            <p class="project-desc">一个纯浏览器实现的离线文件传输工具，通过二维码序列在没有网络连接的环境下传输文件，包括发送端和接收端2部分。</p>
+			<p> 项目内部附有演示页面</p>
+			<a href="https://github.com/wallechfox/QRBridge" class="demo-link" target="_blank">🌐 项目页面：https://github.com/wallechfox/QRBridge/</a>
+			
+        </div>
+
+    </div>
+
+    <div class="footer">
+        
+        <p>© 2025 wallechfox. 本页面由 GitHub Pages 托管.</p>
+    </div>
+</body>
+</html>
